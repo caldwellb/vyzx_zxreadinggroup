@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (5) at (3, 0) {$=$};
+		\node [style=none] (6) at (4, 0) {};
+		\node [style=none] (7) at (8, 0) {};
+		\node [style=hadamard] (8) at (6, 0) {};
+		\node [style=white phase dot] (10) at (1, 0) {$\frac{\pi}{2}$};
+		\node [style=white phase dot] (12) at (-1, 0) {$\frac{\pi}{2}$};
+		\node [style=none] (13) at (2, 0) {};
+		\node [style=none] (14) at (-2, 0) {};
+		\node [style=gray phase dot] (15) at (0, 0) {$\frac{\pi}{2}$};
+		\node [style=none] (16) at (-3, 0) {};
+		\node [style=none] (17) at (-3, 0) {$e^{-i{\frac{\pi}{4}}}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (6.center) to (8);
+		\draw (8) to (7.center);
+		\draw (14.center) to (12);
+		\draw (10) to (13.center);
+		\draw (10) to (15);
+		\draw (15) to (12);
+	\end{pgfonlayer}
+\end{tikzpicture}

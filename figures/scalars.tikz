@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=gray dot] (0) at (-2.5, 3) {};
+		\node [style=white dot] (1) at (-1.5, 3) {};
+		\node [style=none] (2) at (0, 3) {=};
+		\node [style=none] (3) at (1.5, 3) {$\frac{1}{\sqrt{2}}$};
+		\node [style=gray dot] (4) at (-2.5, 2) {};
+		\node [style=gray dot] (5) at (-2.5, 2) {$\alpha$};
+		\node [style=white phase dot] (6) at (-1.5, 2) {$\pi$};
+		\node [style=white dot] (7) at (-2, 1) {$\alpha$};
+		\node [style=none] (8) at (0, 2) {=};
+		\node [style=none] (9) at (0, 1) {=};
+		\node [style=none] (10) at (1.5, 2) {$\sqrt{2} \cdot e^{i\alpha}$};
+		\node [style=none] (11) at (1.5, 1) {$1+e^{i\alpha}$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=30, out=150] (1) to (0);
+		\draw [in=-150, out=-30] (0) to (1);
+		\draw (1) to (0);
+		\draw (5) to (6);
+	\end{pgfonlayer}
+\end{tikzpicture}

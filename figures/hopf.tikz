@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=white dot] (0) at (-3.25, 0) {};
+		\node [style=gray dot] (1) at (-1.75, 0) {};
+		\node [style=none] (2) at (-1, 0) {};
+		\node [style=none] (3) at (-4, 0) {};
+		\node [style=white dot] (4) at (1.75, 0) {};
+		\node [style=gray dot] (5) at (3.25, 0) {};
+		\node [style=none] (6) at (4, 0) {};
+		\node [style=none] (7) at (1, 0) {};
+		\node [style=none] (8) at (0, 0) {$\propto$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (3.center) to (0);
+		\draw [bend left=15, looseness=1.25] (0) to (1);
+		\draw (1) to (2.center);
+		\draw [in=-165, out=-15] (0) to (1);
+		\draw (7.center) to (4);
+		\draw (5) to (6.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,42 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=gray phase dot] (1) at (1.5, 0) {$\beta$};
+		\node [style=none] (2) at (2.5, 1) {};
+		\node [style=none] (3) at (2.5, -1) {};
+		\node [style=gray phase dot] (4) at (-1.5, 0) {$\alpha$};
+		\node [style=none] (5) at (-2.5, 1) {};
+		\node [style=none] (6) at (-2.5, -1) {};
+		\node [style=none] (7) at (0, 1) {};
+		\node [style=none] (8) at (0, -1) {};
+		\node [style=none] (9) at (0, 0.25) {$\vdots$};
+		\node [style=none] (10) at (2.5, 0.25) {$\vdots$};
+		\node [style=none] (11) at (-2.5, 0.25) {$\vdots$};
+		\node [style=none] (12) at (0.5, 0) {m};
+		\node [style=none] (13) at (3, 0) {o};
+		\node [style=none] (14) at (5, 0) {n};
+		\node [style=none] (15) at (4, 0) {$\propto$};
+		\node [style=gray phase dot] (16) at (6.5, 0) {$\alpha+\beta$};
+		\node [style=none] (17) at (5.5, 1) {};
+		\node [style=none] (18) at (5.5, -1) {};
+		\node [style=none] (19) at (7.5, 1) {};
+		\node [style=none] (20) at (7.5, -1) {};
+		\node [style=none] (21) at (7.5, 0.25) {$\vdots$};
+		\node [style=none] (22) at (5.5, 0.25) {$\vdots$};
+		\node [style=none] (23) at (8, 0) {o};
+		\node [style=none] (24) at (-3, 0) {n};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=-180, out=-30, looseness=0.75] (1) to (3.center);
+		\draw [in=180, out=45, looseness=0.75] (1) to (2.center);
+		\draw [in=0, out=-150, looseness=0.75] (4) to (6.center);
+		\draw [in=0, out=135, looseness=0.75] (4) to (5.center);
+		\draw [in=-165, out=0, looseness=0.75] (8.center) to (1);
+		\draw [in=0, out=165] (1) to (7.center);
+		\draw [in=15, out=180, looseness=0.75] (7.center) to (4);
+		\draw [in=180, out=-15, looseness=0.75] (4) to (8.center);
+		\draw [in=0, out=-150, looseness=0.75] (16) to (18.center);
+		\draw [in=0, out=135, looseness=0.75] (16) to (17.center);
+		\draw [in=15, out=180, looseness=0.75] (19.center) to (16);
+		\draw [in=180, out=-15, looseness=0.75] (16) to (20.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

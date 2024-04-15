@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-5, 0) {};
+		\node [style=none] (1) at (-1, 0) {};
+		\node [style=none] (2) at (0, 0) {=};
+		\node [style=none] (3) at (1, 0) {};
+		\node [style=none] (4) at (5, 0) {};
+		\node [style=none] (5) at (1, 0) {};
+		\node [style=none] (6) at (-1, 0) {};
+		\node [style=none] (7) at (-5, 0) {};
+		\node [style=hadamard] (8) at (3, 0) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (5.center) to (8);
+		\draw (8) to (4.center);
+		\draw [style=hadamard edge, in=0, out=-180] (6.center) to (7.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (5, 0) {n};
+		\node [style=gray phase dot] (1) at (6.5, 0) {$\alpha$};
+		\node [style=none] (2) at (5.5, 1) {};
+		\node [style=none] (3) at (5.5, -1) {};
+		\node [style=none] (4) at (7.5, 1) {};
+		\node [style=none] (5) at (7.5, -1) {};
+		\node [style=none] (6) at (7.5, 0.25) {$\vdots$};
+		\node [style=none] (7) at (5.5, 0.25) {$\vdots$};
+		\node [style=none] (8) at (8, 0) {o};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [in=0, out=-150, looseness=0.75] (1) to (3.center);
+		\draw [in=0, out=135, looseness=0.75] (1) to (2.center);
+		\draw [in=15, out=180, looseness=0.75] (4.center) to (1);
+		\draw [in=180, out=-15, looseness=0.75] (1) to (5.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

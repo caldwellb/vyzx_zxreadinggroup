@@ -1,0 +1,33 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=white dot] (0) at (-1.5, 1) {$-\frac{\pi}{2}$};
+		\node [style=white dot] (1) at (-1.5, -1) {$-\frac{\pi}{2}$};
+		\node [style=gray dot] (2) at (0.5, 0) {$-\frac{\pi}{2}$};
+		\node [style=white dot] (3) at (2, 0) {$\frac{\pi}{2}$};
+		\node [style=none] (4) at (2.5, 0) {};
+		\node [style=none] (5) at (-2.5, 1) {};
+		\node [style=none] (6) at (-2.5, -1) {};
+		\node [style=none] (7) at (-3.5, 0) {$\propto$};
+		\node [style=gray dot] (8) at (-8.5, 1) {$\frac{\pi}{2}$};
+		\node [style=gray dot] (9) at (-8.5, -1) {$\frac{\pi}{2}$};
+		\node [style=white phase dot] (10) at (-7, 0) {};
+		\node [style=gray dot] (11) at (-5.5, 0) {$-\frac{\pi}{2}$};
+		\node [style=none] (12) at (-4.5, 0) {};
+		\node [style=none] (13) at (-9.5, 1) {};
+		\node [style=none] (14) at (-9.5, -1) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (5.center) to (0);
+		\draw (2) to (3);
+		\draw (3) to (4.center);
+		\draw [in=-15, out=165] (2) to (0);
+		\draw [in=15, out=-165] (2) to (1);
+		\draw (1) to (6.center);
+		\draw (13.center) to (8);
+		\draw (10) to (11);
+		\draw (11) to (12.center);
+		\draw [in=-15, out=165] (10) to (8);
+		\draw [in=15, out=-165] (10) to (9);
+		\draw (9) to (14.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

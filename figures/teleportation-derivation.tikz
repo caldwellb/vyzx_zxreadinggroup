@@ -1,0 +1,190 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (30) at (-17, 5) {};
+		\node [style=white dot] (31) at (-17, 3) {};
+		\node [style=white dot] (32) at (-17, 1) {};
+		\node [style=Z dot] (33) at (-14, 3) {};
+		\node [style=Z dot] (34) at (-13, 3) {};
+		\node [style=white dot] (35) at (-13, 5) {};
+		\node [style=white dot] (36) at (-14, 1) {};
+		\node [style=hadamard] (37) at (-15.5, 3) {};
+		\node [style=hadamard] (42) at (-12, 3) {};
+		\node [style=white phase dot] (43) at (-10.5, 3) {$b \pi$};
+		\node [style=white phase dot] (44) at (-10.5, 5) {$a \pi$};
+		\node [style=gray phase dot] (45) at (-10.5, 1) {$b \pi$};
+		\node [style=white phase dot] (46) at (-8.5, 1) {$a \pi$};
+		\node [style=none] (47) at (-6.5, 1) {};
+		\node [style=none] (48) at (-5.5, 3) {$\to$};
+		\node [style=none] (49) at (-3.5, 5) {};
+		\node [style=Z dot] (53) at (-2.5, 3) {};
+		\node [style=white dot] (54) at (-2.5, 5) {};
+		\node [style=hadamard] (57) at (-1.5, 3) {};
+		\node [style=white phase dot] (58) at (0, 3) {$b \pi$};
+		\node [style=white phase dot] (59) at (0, 5) {$a \pi$};
+		\node [style=gray phase dot] (60) at (-1.5, 1) {$b \pi$};
+		\node [style=white phase dot] (61) at (0.5, 1) {$a \pi$};
+		\node [style=none] (62) at (1.75, 1) {};
+		\node [style=none] (63) at (-17.5, 0.5) {};
+		\node [style=none] (64) at (-13.5, 0.5) {};
+		\node [style=none] (65) at (-13.5, 3.5) {};
+		\node [style=none] (66) at (-17.5, 3.5) {};
+		\node [style=none] (67) at (-2.5, 1) {};
+		\node [style=none] (68) at (-3, 4.25) {};
+		\node [style=none] (69) at (0.5, 4.25) {};
+		\node [style=none] (70) at (0.5, 5.75) {};
+		\node [style=none] (71) at (-3, 5.75) {};
+		\node [style=none] (72) at (-2, 2.25) {};
+		\node [style=none] (73) at (0.5, 2.25) {};
+		\node [style=none] (74) at (0.5, 3.75) {};
+		\node [style=none] (75) at (-2, 3.75) {};
+		\node [style=none] (76) at (4.5, 5) {};
+		\node [style=Z dot] (77) at (5.5, 3) {};
+		\node [style=white phase dot] (81) at (5.5, 5) {$a \pi$};
+		\node [style=gray phase dot] (82) at (6.5, 1) {$b \pi$};
+		\node [style=white phase dot] (83) at (8.5, 1) {$a \pi$};
+		\node [style=none] (84) at (9.75, 1) {};
+		\node [style=none] (85) at (5.5, 1) {};
+		\node [style=none] (94) at (3, 3) {$\to$};
+		\node [style=Z phase dot] (95) at (7, 3) {$b \pi$};
+		\node [style=none] (96) at (5, 2.25) {};
+		\node [style=none] (97) at (7.5, 2.25) {};
+		\node [style=none] (98) at (7.5, 3.75) {};
+		\node [style=none] (99) at (5, 3.75) {};
+		\node [style=none] (100) at (-15.5, -1) {};
+		\node [style=white phase dot] (102) at (-14.5, -1) {$a \pi$};
+		\node [style=gray phase dot] (103) at (-13.5, -5) {$b \pi$};
+		\node [style=white phase dot] (104) at (-11.5, -5) {$a \pi$};
+		\node [style=none] (105) at (-10.25, -5) {};
+		\node [style=none] (106) at (-14.5, -5) {};
+		\node [style=none] (107) at (-17, -3) {$\to$};
+		\node [style=Z phase dot] (108) at (-14.5, -3) {$b \pi$};
+		\node [style=none] (109) at (-9, -3) {$\to$};
+		\node [style=none] (110) at (-7.5, -3) {};
+		\node [style=white phase dot] (111) at (-6.5, -3) {$a \pi$};
+		\node [style=gray phase dot] (112) at (-4, -3) {$b \pi$};
+		\node [style=white phase dot] (113) at (-2.75, -3) {$a \pi$};
+		\node [style=none] (114) at (-1.5, -3) {};
+		\node [style=Z phase dot] (116) at (-5.25, -3) {$b \pi$};
+		\node [style=none] (117) at (0, -3) {$\to$};
+		\node [style=none] (118) at (1.5, -3) {};
+		\node [style=white phase dot] (119) at (2.5, -3) {$a \pi$};
+		\node [style=white phase dot] (121) at (5, -3) {$a \pi$};
+		\node [style=none] (122) at (6.25, -3) {};
+		\node [style=Z phase dot] (123) at (3.75, -3) {$2 b \pi$};
+		\node [style=none] (124) at (-12.5, -7) {$\to$};
+		\node [style=none] (125) at (-9.75, -7) {};
+		\node [style=white phase dot] (126) at (-8.75, -7) {$a \pi$};
+		\node [style=white phase dot] (127) at (-7.75, -7) {$a \pi$};
+		\node [style=none] (128) at (-6.5, -7) {};
+		\node [style=none] (129) at (-4.5, -7) {$\to$};
+		\node [style=none] (130) at (-3, -7) {};
+		\node [style=white phase dot] (132) at (-1.5, -7) {$2 a \pi$};
+		\node [style=none] (133) at (0, -7) {};
+		\node [style=none] (134) at (1.5, -7) {$\to$};
+		\node [style=none] (135) at (3, -7) {};
+		\node [style=none] (137) at (6, -7) {};
+		\node [style=none] (138) at (-5.75, -3.75) {};
+		\node [style=none] (139) at (-3.5, -3.75) {};
+		\node [style=none] (140) at (-3.5, -2.25) {};
+		\node [style=none] (141) at (-5.75, -2.25) {};
+		\node [style=none] (142) at (3, -3.75) {};
+		\node [style=none] (143) at (4.5, -3.75) {};
+		\node [style=none] (144) at (4.5, -2.25) {};
+		\node [style=none] (145) at (3, -2.25) {};
+		\node [style=none] (146) at (-9.5, -7.75) {};
+		\node [style=none] (147) at (-7, -7.75) {};
+		\node [style=none] (148) at (-7, -6.25) {};
+		\node [style=none] (149) at (-9.5, -6.25) {};
+		\node [style=none] (150) at (-2.25, -7.75) {};
+		\node [style=none] (151) at (-0.75, -7.75) {};
+		\node [style=none] (152) at (-0.75, -6.25) {};
+		\node [style=none] (153) at (-2.25, -6.25) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (30.center) to (35);
+		\draw (35) to (34);
+		\draw (34) to (33);
+		\draw (33) to (37);
+		\draw (37) to (31);
+		\draw (32) to (36);
+		\draw (36) to (33);
+		\draw (35) to (44);
+		\draw (43) to (42);
+		\draw (42) to (34);
+		\draw (36) to (45);
+		\draw (45) to (46);
+		\draw (47.center) to (46);
+		\draw (49.center) to (54);
+		\draw (54) to (53);
+		\draw (54) to (59);
+		\draw (58) to (57);
+		\draw (57) to (53);
+		\draw (60) to (61);
+		\draw (62.center) to (61);
+		\draw [style=separatediagrams] (64.center)
+			 to (65.center)
+			 to (66.center)
+			 to (63.center)
+			 to cycle;
+		\draw (60) to (67.center);
+		\draw [bend left=90, looseness=1.75] (67.center) to (53);
+		\draw [style=separatediagrams] (70.center)
+			 to (71.center)
+			 to (68.center)
+			 to (69.center)
+			 to cycle;
+		\draw [style=separatediagrams] (74.center)
+			 to (75.center)
+			 to [in=90, out=-90] (72.center)
+			 to (73.center)
+			 to cycle;
+		\draw (82) to (83);
+		\draw (84.center) to (83);
+		\draw (82) to (85.center);
+		\draw [bend left=90, looseness=1.75] (85.center) to (77);
+		\draw (76.center) to (81);
+		\draw (81) to (77);
+		\draw (95) to (77);
+		\draw [style=separatediagrams] (98.center) to (99.center);
+		\draw [style=separatediagrams] (99.center) to (96.center);
+		\draw [style=separatediagrams] (96.center) to (97.center);
+		\draw [style=separatediagrams] (97.center) to (98.center);
+		\draw (103) to (104);
+		\draw (105.center) to (104);
+		\draw (103) to (106.center);
+		\draw (100.center) to (102);
+		\draw [bend left=90, looseness=2.00] (106.center) to (108);
+		\draw (102) to (108);
+		\draw (112) to (113);
+		\draw (114.center) to (113);
+		\draw (110.center) to (111);
+		\draw (111) to (116);
+		\draw (116) to (112);
+		\draw (122.center) to (121);
+		\draw (118.center) to (119);
+		\draw (119) to (123);
+		\draw (123) to (121);
+		\draw (128.center) to (127);
+		\draw (125.center) to (126);
+		\draw (127) to (126);
+		\draw (133.center) to (132);
+		\draw (130.center) to (132);
+		\draw (135.center) to (137.center);
+		\draw [style=separatediagrams] (140.center) to (141.center);
+		\draw [style=separatediagrams, in=90, out=-90] (141.center) to (138.center);
+		\draw [style=separatediagrams] (138.center) to (139.center);
+		\draw [style=separatediagrams] (139.center) to (140.center);
+		\draw [style=separatediagrams] (144.center) to (145.center);
+		\draw [style=separatediagrams, in=90, out=-90] (145.center) to (142.center);
+		\draw [style=separatediagrams] (142.center) to (143.center);
+		\draw [style=separatediagrams] (143.center) to (144.center);
+		\draw [style=separatediagrams] (148.center) to (149.center);
+		\draw [style=separatediagrams, in=90, out=-90] (149.center) to (146.center);
+		\draw [style=separatediagrams] (146.center) to (147.center);
+		\draw [style=separatediagrams] (147.center) to (148.center);
+		\draw [style=separatediagrams] (152.center) to (153.center);
+		\draw [style=separatediagrams, in=90, out=-90] (153.center) to (150.center);
+		\draw [style=separatediagrams] (150.center) to (151.center);
+		\draw [style=separatediagrams] (151.center) to (152.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

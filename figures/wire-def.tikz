@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=white dot] (0) at (-6, 0) {};
+		\node [style=white dot] (1) at (-6, 0) {};
+		\node [style=white dot] (2) at (-6, 0) {};
+		\node [style=white dot] (3) at (-6, 0) {};
+		\node [style=none] (8) at (-4, 0) {};
+		\node [style=gray dot] (10) at (0, 0) {};
+		\node [style=none] (12) at (-2, 0) {};
+		\node [style=none] (13) at (2, 0) {};
+		\node [style=none] (14) at (3, 0) {=};
+		\node [style=none] (15) at (4, 0) {};
+		\node [style=none] (16) at (-8, 0) {};
+		\node [style=none] (18) at (8, 0) {};
+		\node [style=none] (19) at (-3, 0) {=};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (16.center) to (3);
+		\draw (3) to (8.center);
+		\draw (12.center) to (10);
+		\draw (10) to (13.center);
+		\draw (15.center) to (18.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

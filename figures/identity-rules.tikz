@@ -1,0 +1,36 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=white dot] (0) at (-8, 0) {};
+		\node [style=white dot] (1) at (-8, 0) {};
+		\node [style=white dot] (2) at (-8, 0) {};
+		\node [style=white dot] (3) at (-8, 0) {};
+		\node [style=none] (8) at (-7, 0) {};
+		\node [style=gray dot] (10) at (-4, 0) {};
+		\node [style=none] (12) at (-5, 0) {};
+		\node [style=none] (13) at (-3, 0) {};
+		\node [style=none] (14) at (-2, 0) {$\propto$};
+		\node [style=none] (15) at (-1, 0) {};
+		\node [style=none] (16) at (-9, 0) {};
+		\node [style=none] (18) at (1, 0) {};
+		\node [style=none] (19) at (-6, 0) {$\propto$};
+		\node [style=none] (24) at (5, 0) {};
+		\node [style=none] (26) at (7, 0) {};
+		\node [style=none] (27) at (9, 0) {};
+		\node [style=none] (28) at (2, 0) {$\propto$};
+		\node [style=none] (29) at (3, 0) {};
+		\node [style=none] (30) at (6, 0) {$\propto$};
+		\node [style=white phase dot] (32) at (4, 0) {$2 \pi$};
+		\node [style=gray phase dot] (33) at (8, 0) {$2 \pi$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (16.center) to (3);
+		\draw (3) to (8.center);
+		\draw (12.center) to (10);
+		\draw (10) to (13.center);
+		\draw (15.center) to (18.center);
+		\draw (29.center) to (32);
+		\draw (32) to (24.center);
+		\draw (26.center) to (33);
+		\draw (33) to (27.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

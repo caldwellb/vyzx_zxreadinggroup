@@ -1,0 +1,77 @@
+\usepackage{xspace}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{amsfonts}
+
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{fadings}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{decorations.markings}
+
+\definecolor{zx_red}{RGB}{227, 145, 145}
+\definecolor{zx_green}{RGB}{230, 250, 230}
+
+
+\newcommand{\zxcalculus}{ZX-calculus\xspace}
+\newcommand{\zxdiagram}{ZX-diagram\xspace}
+\newcommand{\zxdiagrams}{ZX-diagrams\xspace}
+\newcommand{\dzx}{\textnormal{$\mathrm{\Delta}$ZX}\xspace}
+\newcommand{\sneg}{\scalebox{0.5}{$\neg$}}
+
+\newcommand{\Wcross}{$\!\!\!\!\raisebox{+0.1em}{$\times$}\!\!\!\!$}
+
+\usetikzlibrary{circuits.ee.IEC}
+\newcommand{\ground}
+{
+%\ifexternal\tikzsetnextfilename{ground}\fi
+	\begin{tikzpicture}[circuit ee IEC,yscale=1.8,xscale=1.6]
+	\draw[solid,arrows=-] (-1ex,0) to (0,0) node[anchor=center,ground,rotate=0,xshift=.66ex] {};
+	\end{tikzpicture}}
+
+
+\newcommand{\SpiderRule}{\ensuremath{(\hyperref[fig:zx-rules]{\bm f})}\xspace}
+\newcommand{\FusionRule}{\SpiderRule}
+\newcommand{\PiRule}{\ensuremath{(\hyperref[fig:zx-rules]{\bm \pi})}\xspace}
+\newcommand{\CopyRule}{\ensuremath{(\hyperref[fig:zx-rules]{\bm c})}\xspace}
+\newcommand{\HadamardRule}{\ensuremath{(\hyperref[fig:zx-rules]{\bm{h}})}\xspace}
+\newcommand{\IdRule}{\ensuremath{(\hyperref[fig:zx-rules]{\bm{id}})}\xspace}
+\newcommand{\HHRule}{\ensuremath{(\hyperref[fig:zx-rules]{\bm{hh}})}\xspace}
+\newcommand{\BialgRule}{\ensuremath{(\hyperref[fig:zx-rules]{\bm b})}\xspace}
+\newcommand{\StrongCompRule}{\BialgRule}
+%\newcommand{\PiCopyRule}{\ensuremath{(\hyperref[fig:zx-rules]{\bm{\pi c}})}\xspace}
+\newcommand{\HopfRule}{\eqref{eq:hopf-rule}\xspace}
+
+%% small versions
+\newcommand{\picopyrule}{{\footnotesize\PiCopyRule}}
+\newcommand{\strongcomprule}{{\footnotesize\StrongCompRule}}
+\newcommand{\bialgrule}{{\footnotesize\BialgRule}}
+\newcommand{\idrule}{{\footnotesize\IdRule}}
+\newcommand{\hadamardrule}{{\footnotesize\HadamardRule}}
+\newcommand{\hhrule}{\footnotesize\HHRule}
+\newcommand{\copyrule}{\footnotesize\CopyRule}
+\newcommand{\pirule}{\footnotesize\PiRule}
+\newcommand{\spiderrule}{\footnotesize\SpiderRule}
+\newcommand{\fusionrule}{\footnotesize\SpiderRule}
+\newcommand{\hopfrule}{\footnotesize\HopfRule}
+
+%DEFINED RULES
+\newcommand{\HCompRule}{(\hyperref[fig:phasefree-rules]{BA2})\xspace}
+\newcommand{\MultRule}{(\hyperref[fig:phasefree-rules]{M})\xspace}
+\newcommand{\OrthoRule}{(\hyperref[fig:phasefree-rules]{O})\xspace}
+
+%% small versions
+\newcommand{\greydef}{\normalsize\GreyDef}
+\newcommand{\notdef}{\normalsize\NotDef}
+\newcommand{\zdef}{\normalsize\ZDef}
+\newcommand{\triangledef}{\normalsize\TriangleDef}
+
+\newcommand{\hcomprule}{\normalsize\HCompRule}
+\newcommand{\multrule}{\normalsize\MultRule}
+\newcommand{\orthorule}{\normalsize\OrthoRule}
+
+%Make node for measuring in circuit
+\tikzset{meter/.append style={draw, inner sep=5, rectangle, font=\vphantom{A}, minimum width=20, line width=.4,
+ path picture={\draw[black] ([shift={(.1,.2)}]path picture bounding box.south west) to[bend left=70] ([shift={(-.1,.2)}]path picture bounding box.south east);\draw[black,-latex] ([shift={(0,.1)}]path picture bounding box.south) -- ([shift={(.25,-.05)}]path picture bounding box.north);}}}
+
